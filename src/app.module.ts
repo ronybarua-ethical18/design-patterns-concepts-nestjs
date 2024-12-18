@@ -11,6 +11,7 @@ import { ProxyModule } from './proxy/proxy.module';
 import { DecoratorModule } from './decorator/decorator.module';
 import { CompositeModule } from './composite/composite.module';
 import { BridgeModule } from './bridge/bridge.module';
+import { FacadeModule } from './facade/facade.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { BridgeModule } from './bridge/bridge.module';
     DecoratorModule,
     CompositeModule,
     BridgeModule,
+    FacadeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
